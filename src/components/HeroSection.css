@@ -1,0 +1,103 @@
+.hero-section {
+  position: relative;
+  width: 100vw;
+  min-height: 700px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  background: #222;
+}
+
+.hero-bg {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-image: url('https://ggits.org/wp-content/uploads/2019/02/3.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  filter: brightness(0.7);
+  z-index: 1;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-logo {
+  width: 180px;
+  max-width: 90vw;
+  margin-bottom: 32px;
+  background: rgba(255,255,255,0.7);
+  border-radius: 12px;
+  padding: 12px;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 32px;
+}
+
+.hero-btn {
+  padding: 14px 32px;
+  font-size: 1.15rem;
+  border: none;
+  border-radius: 4px;
+  text-decoration: none;
+  color: #fff;
+  background: #23272b;
+  transition: background 0.2s, color 0.2s;
+  font-weight: 500;
+}
+.hero-btn.admission {
+  background: #e53935;
+}
+.hero-btn.admission:hover {
+  background: #b71c1c;
+}
+.hero-btn.newsletter {
+  background: #23272b;
+}
+.hero-btn.newsletter:hover {
+  background: #444;
+}
+
+.scroll-down-container {
+  position: absolute;
+  left: 50%;
+  bottom: 24px;
+  transform: translateX(-50%);
+  z-index: 2;
+  text-decoration: none;
+  width: 54px;
+  height: 54px;
+  background: rgba(34, 34, 34, 0.7);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.12);
+  transition: background 0.2s;
+}
+.scroll-down-container:hover {
+  background: #e53935;
+}
+.scroll-down {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  color: #fff;
+  opacity: 0.95;
+  height: 100%;
+  width: 100%;
+  animation: none;
+  transition: color 0.2s;
+}
+

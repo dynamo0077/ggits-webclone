@@ -1,0 +1,44 @@
+.streams-section-custom {
+  background: #faf9f5;
+  padding: 48px 0 40px 0;
+  text-align: center;
+}
+.streams-title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 16px;
+  color: #222;
+}
+.streams-divider {
+  width: 80%;
+  max-width: 420px;
+  margin: 0 auto 32px auto;
+  border-bottom: 2px solid #222;
+}
+.streams-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 20px 32px;
+  max-width: 900px;
+  margin: 0 auto;
+  justify-items: center;
+}
+.stream-btn {
+  background: #1e293b;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 14px 18px;
+  border-radius: 3px;
+  text-decoration: none;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+  transition: background 0.2s, transform 0.2s;
+  display: inline-block;
+  min-width: 250px;
+  text-align: center;
+}
+.stream-btn:hover {
+  background: #007bff;
+  color: #fff;
+  transform: translateY(-2px) scale(1.03);
+}
