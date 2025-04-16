@@ -12,12 +12,12 @@ const Header = () => {
         <Container>
           <div id="header-contact">
             <span id="header-phone" className="me-4">
-              <i className="icon-phone me-1"></i>
+              <i className="bi bi-telephone me-1"></i>
               9425323089, 9893556449
             </span>
             <a href="mailto:contact@ggits.org" className="text-white text-decoration-none">
               <span id="header-email">
-                <i className="icon-envelope me-1"></i>
+                <i className="bi bi-envelope me-1"></i>
                 contact@ggits.org
               </span>
             </a>
@@ -43,7 +43,7 @@ const Header = () => {
             <div id="header-search" style={{ marginLeft: '24px', display: 'flex', alignItems: 'center' }}>
               <span
                 id="header-search-icon"
-                className="icon-search"
+                className="bi bi-search"
                 aria-label="Open search"
                 style={{ fontSize: '1.5rem', cursor: 'pointer' }}
                 onClick={() => setIsSearchVisible(true)}
@@ -73,7 +73,7 @@ const Header = () => {
                 onClick={() => setIsSearchVisible(false)}
                 style={{ fontSize: '1.5rem', color: '#e53935' }}
               >
-                <i className="icon-close"></i>
+                <i className="bi bi-x"></i>
               </button>
             </form>
           </Container>
