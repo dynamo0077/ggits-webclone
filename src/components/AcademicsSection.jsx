@@ -35,19 +35,17 @@ const AcademicsSection = () => (
     </div>
     <div className="academics-cards-row">
       {academics.map((item, idx) => (
-        <div className={`academics-card-outer ${item.bgClass}`} key={idx}>
-          <a href={item.link} target="_blank" rel="noopener noreferrer" className="academics-card-link">
-            <div className="card">
-              <div className="icon-absolute">
-                <i className={`fa ${item.icon}`}></i>
-              </div>
-              <div className="card-content-absolute">
-                <h3 className="academics-card-title">{item.title}</h3>
-                <p className="academics-card-desc">{item.description}</p>
-              </div>
+        <a href={item.link} target="_blank" rel="noopener noreferrer" className={`academics-card-outer academics-card-link ${item.bgClass}`} key={idx}>
+          <div className="card">
+            <div className="icon-absolute">
+              <i className={`fa ${item.icon}`}></i>
             </div>
-          </a>
-        </div>
+            <div className="card-content-absolute">
+              <h3 className="academics-card-title">{item.title}</h3>
+              <p className="academics-card-desc">{item.description}</p>
+            </div>
+          </div>
+        </a>
       ))}
     </div>
   </section>
